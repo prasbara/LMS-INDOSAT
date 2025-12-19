@@ -1,108 +1,115 @@
 # Indosat Ooredoo Hutchison - Learning Management System (LMS)
 
-## 🎯 Overview
-Modern, enterprise-grade Learning Management System designed specifically for Direct Sales Executives (DSE) at Indosat Ooredoo Hutchison. Built with React, TypeScript, Tailwind CSS, and featuring role-based access for Admin, Trainer, and DSE users.
+## 🎯 Gambaran Umum
+Learning Management System modern dan berstandar enterprise yang dirancang khusus untuk Direct Sales Executive (DSE) di Indosat Ooredoo Hutchison. Aplikasi ini dibangun menggunakan React, TypeScript, dan Tailwind CSS, serta menerapkan sistem akses berbasis peran untuk Admin, Trainer, dan DSE.
 
-## 🎨 Design Features
-- **Brand Colors**: Indosat Red (#DC1F2E), Yellow (#FFC600), Orange (#FF6B00)
-- **Mobile-First Design**: Fully responsive across all devices
-- **Smooth Animations**: Using Motion/React for elegant transitions
-- **Modern UI**: Professional corporate interface with intuitive navigation
+---
 
-## 👥 User Roles
+## 🎨 Fitur Desain
+- **Warna Brand**: Indosat Merah (#DC1F2E), Kuning (#FFC600), Oranye (#FF6B00)
+- **Mobile-First Design**: Responsif di seluruh perangkat
+- **Animasi Halus**: Menggunakan Motion/React
+- **UI Modern**: Tampilan korporat profesional dengan navigasi intuitif
+
+---
+
+## 👥 Peran Pengguna
 
 ### 1. Admin
-**Access**: admin@indosat.com
-**Features**:
-- Global dashboard with analytics
-- User management capabilities
-- Course oversight and monitoring
-- Performance analytics with charts
-- Enrollment trends visualization
-- Real-time activity tracking
+**Akses**: admin@indosat.com  
+**Fitur**:
+- Dashboard global dengan analitik
+- Manajemen pengguna
+- Monitoring dan pengelolaan course
+- Analitik performa berbasis grafik
+- Visualisasi tren enrollment
+- Pelacakan aktivitas secara real-time
 
 ### 2. Trainer
-**Access**: ahmad@indosat.com
-**Features**:
-- Personal dashboard for course management
-- Course creation and editing tools
-- Student progress monitoring
-- Quiz and assessment creation
-- Performance metrics per course
-- Student activity tracking
+**Akses**: ahmad@indosat.com  
+**Fitur**:
+- Dashboard pribadi untuk pengelolaan course
+- Pembuatan dan pengeditan course
+- Monitoring progres peserta
+- Pembuatan quiz dan assessment
+- Analitik performa per course
+- Pelacakan aktivitas peserta
 
 ### 3. DSE (Direct Sales Executive)
-**Access**: budi@indosat.com
-**Features**:
-- Personalized learning dashboard
-- Course catalog with filtering
-- Video-based learning modules
-- Interactive quizzes with instant feedback
-- Progress tracking and completion metrics
-- Gamification elements:
-  - Points system
-  - Levels and badges
-  - Leaderboard rankings
-- Certificate generation
-- Learning goals and analytics
+**Akses**: budi@indosat.com  
+**Fitur**:
+- Dashboard pembelajaran personal
+- Katalog course dengan fitur filter
+- Modul pembelajaran berbasis video
+- Quiz interaktif dengan feedback instan
+- Pelacakan progres dan penyelesaian
+- Gamifikasi:
+  - Sistem poin
+  - Level dan badge
+  - Leaderboard
+- Pembuatan sertifikat
+- Analitik dan target pembelajaran
 
-## 📚 Core Features
+---
+
+## 📚 Fitur Utama
 
 ### Learning Path
-- **Course Catalog**: Browse all available training courses
-- **Progress Tracking**: Visual progress bars and completion status
-- **Module System**: Structured learning with sequential modules
-- **Video Training**: Integrated video player for each module
-- **Assessments**: Quiz after each module completion
+- **Katalog Course**: Menampilkan seluruh course pelatihan
+- **Progress Tracking**: Progress bar dan status penyelesaian
+- **Sistem Modul**: Pembelajaran terstruktur dan berurutan
+- **Video Training**: Video terintegrasi di setiap modul
+- **Assessment**: Quiz setelah penyelesaian modul
 
-### Gamification
-- **Points System**: Earn points for completing courses and quizzes
-- **Levels**: Progress through experience levels
-- **Badges**: Unlock achievements (Common, Rare, Epic, Legendary)
-- **Leaderboard**: Compete with other DSEs
-- **Certificates**: Downloadable completion certificates
+### Gamifikasi
+- **Sistem Poin**: Diperoleh dari course dan quiz
+- **Level**: Peningkatan level berdasarkan pengalaman
+- **Badge**: Achievement (Common, Rare, Epic, Legendary)
+- **Leaderboard**: Peringkat antar DSE
+- **Sertifikat**: Sertifikat digital yang dapat diunduh
 
-### Quiz System
-- **Timed Quizzes**: Optional time limits
-- **Multiple Choice**: Interactive question format
-- **Instant Feedback**: Immediate results with explanations
-- **Score Calculation**: Automatic grading
-- **Pass/Fail**: Configurable passing scores
-- **Answer Review**: Detailed explanation of correct answers
+### Sistem Quiz
+- **Quiz Berwaktu** (opsional)
+- **Pilihan Ganda**
+- **Feedback Instan**
+- **Penilaian Otomatis**
+- **Status Lulus atau Tidak**
+- **Review Jawaban dan Penjelasan**
 
-## 🗂️ Project Structure
+---
 
-```
+## 🗂️ Struktur Proyek
 /src/app/
 ├── context/
-│   └── AppContext.tsx          # Global state management
+│ └── AppContext.tsx
 ├── components/
-│   ├── Login.tsx               # Authentication UI
-│   ├── Sidebar.tsx             # Navigation sidebar
-│   ├── admin/
-│   │   └── AdminDashboard.tsx  # Admin overview
-│   ├── trainer/
-│   │   └── TrainerDashboard.tsx # Trainer overview
-│   ├── dse/
-│   │   ├── DSEDashboard.tsx    # DSE home page
-│   │   ├── Learning.tsx        # Course catalog & player
-│   │   ├── Leaderboard.tsx     # Rankings
-│   │   ├── Badges.tsx          # Achievement showcase
-│   │   └── Certificates.tsx    # Certificates gallery
-│   └── shared/
-│       └── QuizComponent.tsx   # Interactive quiz
-└── App.tsx                     # Main application
+│ ├── Login.tsx
+│ ├── Sidebar.tsx
+│ ├── admin/
+│ │ └── AdminDashboard.tsx
+│ ├── trainer/
+│ │ └── TrainerDashboard.tsx
+│ ├── dse/
+│ │ ├── DSEDashboard.tsx
+│ │ ├── Learning.tsx
+│ │ ├── Leaderboard.tsx
+│ │ ├── Badges.tsx
+│ │ └── Certificates.tsx
+│ └── shared/
+│ └── QuizComponent.tsx
+└── App.tsx
 
-```
 
-## 💾 Mock Data Structure
+---
+
+## 💾 Struktur Mock Data
 
 ### Users
-- 5 sample users (1 Admin, 1 Trainer, 3 DSEs)
-- Includes profile information, points, levels, and badges
+- 5 pengguna contoh (1 Admin, 1 Trainer, 3 DSE)
+- Data profil, poin, level, dan badge
 
 ### Courses
-- 6 training courses covering:
+- 6 course pelatihan:
   - Product Knowledge
   - Sales Techniques
   - Digital Services
@@ -111,165 +118,147 @@ Modern, enterprise-grade Learning Management System designed specifically for Di
   - Competitive Analysis
 
 ### Modules
-- 6 modules per course
-- Video-based content
-- Progress tracking
+- 6 modul per course
+- Konten video
+- Pelacakan progres
 
 ### Quizzes
-- Multiple choice questions
-- Explanations for answers
-- Configurable passing scores
+- Soal pilihan ganda
+- Penjelasan jawaban
+- Passing score dapat dikonfigurasi
 
 ### Badges
-- 5 achievement types
-- Rarity tiers (Common, Rare, Epic, Legendary)
-- Unlock criteria
-
-## 🚀 Quick Start
-
-### Demo Login Credentials
-
-**Admin**:
-- Email: admin@indosat.com
-- Role: Admin
-
-**Trainer**:
-- Email: ahmad@indosat.com
-- Role: Trainer
-
-**DSE**:
-- Email: budi@indosat.com
-- Role: DSE
-- Points: 2850
-- Level: 8
-
-### Quick Demo Login
-Use the "Quick Demo Login" buttons on the login page to instantly access each role.
-
-## 🎮 User Flow
-
-### DSE Learning Journey
-1. **Login** → View personalized dashboard
-2. **Browse Courses** → Filter by status (All, In Progress, Completed)
-3. **Select Course** → View modules and progress
-4. **Watch Video** → Complete module content
-5. **Take Quiz** → Test knowledge
-6. **Earn Points** → Unlock badges and climb leaderboard
-7. **Get Certificate** → Download completion proof
-
-## 📊 Analytics & Tracking
-
-### For Admins
-- Total users and enrollments
-- Course completion rates
-- Enrollment trends over time
-- Category distribution
-- User activity patterns
-- Real-time activity feed
-
-### For Trainers
-- Course enrollment numbers
-- Student completion rates
-- Average ratings
-- Per-course performance metrics
-- Recent student activity
-
-### For DSEs
-- Personal progress metrics
-- Learning activity charts
-- Goal tracking
-- Rank position
-- Points and badges earned
-
-## 🔧 Technical Implementation
-
-### State Management
-- React Context API for global state
-- Mock data simulating backend responses
-- Local state for UI interactions
-
-### Routing
-- Conditional rendering based on user role
-- Dynamic view switching
-- Protected routes by role
-
-### Animations
-- Motion/React for smooth transitions
-- Page load animations
-- Interactive hover effects
-- Modal animations
-
-### Charts
-- Recharts for data visualization
-- Bar charts, line charts, pie charts
-- Responsive chart containers
-
-## 🎯 Future Integration Points
-
-### Backend Integration Ready
-The application is structured for easy backend integration:
-
-1. **Authentication**: Replace mock login with JWT/OAuth
-2. **API Endpoints**: 
-   - `/api/users`
-   - `/api/courses`
-   - `/api/quizzes`
-   - `/api/progress`
-   - `/api/badges`
-   - `/api/leaderboard`
-
-3. **Database Schema**:
-   - Users table
-   - Courses table
-   - Modules table
-   - Quizzes & Questions table
-   - Progress tracking table
-   - Achievements table
-   - Leaderboard cache
-
-4. **File Upload**: Video upload for trainers
-5. **Real-time Updates**: WebSocket for live leaderboard
-6. **Notifications**: Push notifications for achievements
-
-## 🎨 Customization
-
-### Brand Colors
-Easily customize in `/src/styles/theme.css`:
-- `--primary`: Main brand color (Indosat Red)
-- `--secondary`: Accent color (Indosat Yellow)
-- `--accent`: Secondary accent (Indosat Orange)
-
-### Mock Data
-Modify in `/src/app/context/AppContext.tsx`:
-- Add more users
-- Create additional courses
-- Design new badges
-- Adjust quiz questions
-
-## 📱 Mobile Responsiveness
-- Hamburger menu for mobile navigation
-- Responsive grid layouts
-- Touch-friendly interactions
-- Optimized for screens 320px+
-
-## ⚡ Performance
-- Lazy loading for images
-- Optimized animations
-- Efficient state updates
-- Minimal re-renders
-
-## 🔐 Security Considerations (For Production)
-- Implement proper authentication
-- Secure API endpoints
-- Input validation
-- XSS protection
-- CSRF tokens
-- Role-based access control (RBAC)
-- Encrypted data transmission
+- 5 jenis achievement
+- Tingkatan rarity
+- Kriteria unlock
 
 ---
 
-**Built for**: Indosat Ooredoo Hutchison  
-**Target Users**: Direct Sales Executives (DSE)  
-**Technology Stack**: React, TypeScript, Tailwind CSS, Motion, Recharts  
-**Design**: Mobile-first, Enterprise-grade, Corporate Professional
+## 🚀 Quick Start
+
+### Kredensial Demo
+
+**Admin**
+- Email: admin@indosat.com
+- Role: Admin
+
+**Trainer**
+- Email: ahmad@indosat.com
+- Role: Trainer
+
+**DSE**
+- Email: budi@indosat.com
+- Role: DSE
+- Poin: 2850
+- Level: 8
+
+Gunakan tombol **Quick Demo Login** pada halaman login untuk masuk otomatis sesuai peran.
+
+---
+
+## 🎮 Alur Pengguna (DSE)
+1. Login
+2. Melihat dashboard personal
+3. Memilih course
+4. Menonton video modul
+5. Mengerjakan quiz
+6. Mendapatkan poin dan badge
+7. Mengunduh sertifikat
+
+---
+
+## 📊 Analitik & Monitoring
+
+### Admin
+- Jumlah pengguna dan enrollment
+- Tingkat penyelesaian course
+- Tren enrollment
+- Distribusi kategori
+- Aktivitas pengguna
+- Feed aktivitas real-time
+
+### Trainer
+- Jumlah peserta course
+- Tingkat penyelesaian
+- Rata-rata performa
+- Aktivitas peserta terbaru
+
+### DSE
+- Progres pembelajaran
+- Statistik aktivitas
+- Target pembelajaran
+- Peringkat
+- Poin dan badge
+
+---
+
+## 🔧 Implementasi Teknis
+
+### State Management
+- React Context API
+- Mock data simulasi backend
+- Local state untuk interaksi UI
+
+### Routing
+- Render berdasarkan peran pengguna
+- Proteksi halaman sesuai role
+
+### Animasi
+- Motion/React
+- Animasi halaman dan modal
+- Efek hover interaktif
+
+### Chart
+- Recharts
+- Bar, Line, dan Pie Chart
+- Responsif
+
+---
+
+## 🎯 Pengembangan Selanjutnya
+- Integrasi backend (JWT atau OAuth)
+- REST API
+- Database produksi
+- Leaderboard real-time
+- Push notification
+- Upload video untuk trainer
+
+---
+
+## 🎨 Kustomisasi
+- Warna tema: `/src/styles/theme.css`
+- Mock data: `/src/app/context/AppContext.tsx`
+
+---
+
+## 📱 Responsivitas
+- Menu hamburger untuk mobile
+- Layout grid responsif
+- Interaksi ramah sentuhan
+- Optimal untuk layar 320px ke atas
+
+---
+
+## ⚡ Performa
+- Lazy loading aset
+- Animasi optimal
+- Update state efisien
+- Minim re-render
+
+---
+
+## 🔐 Keamanan (Produksi)
+- Autentikasi dan otorisasi
+- Role-Based Access Control (RBAC)
+- Validasi input
+- Proteksi XSS dan CSRF
+- Enkripsi data
+
+---
+
+**Dibangun untuk**: Indosat Ooredoo Hutchison  
+**Target Pengguna**: Direct Sales Executive (DSE)  
+**Tech Stack**: React, TypeScript, Tailwind CSS, Motion, Recharts  
+**Desain**: Mobile-first, Enterprise-grade, Profesional
+
+
